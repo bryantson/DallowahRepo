@@ -1,6 +1,5 @@
 angular.module("DallasNetworkApp")
 .factory("ImageService", [function() {
-    console.log("INSIDE ImageService ");
     var urlImg = "https://firebasestorage.googleapis.com/v0/b/dallaskoreannetwork.appspot.com/o/images";
   return {
     getImgURL : function(id) {
