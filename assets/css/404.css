@@ -1,0 +1,31 @@
+body {
+	background-image:url("/images/bg404.jpg");/*your background image*/
+	background-position: center center;
+	background-attachment: fixed;
+	background-color: #464646;
+ 	background-repeat:no-repeat;/*we want to have one single image not a repeated one*/
+	background-size:cover;/*this sets the image to fullscreen covering the whole screen*/
+	   /*css hack for ie*/
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/bg404.jpg',sizingMethod='scale');
+	-ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/bg404.jpg',sizingMethod='scale')";
+}
+div {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";       /* IE 8 */
+	filter: alpha(opacity=70);  /* IE 5-7 */
+	-moz-opacity: 0.7;          /* Netscape */
+	-khtml-opacity: 0.7;        /* Safari 1.x */
+	opacity: 0.7;               /* Good browsers */
+	margin-top: 10%;
+  margin-left: 10%;
+	color: #ffffff;
+	font-size: 20px;
+	font-family: "Times New Roman", "Georgia";
+	padding: 10px 10px 10px 10px;
+}
+img {
+	width: 200px;
+	height: 200px;
+	display: block;
+	margin-left: 10%;
+	margin-top: 10%;
+}
